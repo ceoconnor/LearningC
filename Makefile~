@@ -1,0 +1,8 @@
+all: hello
+
+run:
+	echo "Running: hello"
+	./hello
+
+clean:
+	rm -f hello hello.o
