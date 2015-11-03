@@ -1,10 +1,4 @@
-//
-//  complex.c
-//  complex
-//
-//  Created by Cormac O'Connor on 11/2/15.
-//  Copyright © 2015 Cormac O'Connor. All rights reserved.
-//
+
 
 
 
