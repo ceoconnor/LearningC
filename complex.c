@@ -54,7 +54,7 @@ Complex juliamap(Complex z, Complex c){
     return j;
 }
 void complex_print(Complex z){
-    printf("Z = %Lfx + %Lfyi", z.x, z.y);
+    printf("\nZ = %Lfx + %Lfyi\n", z.x, z.y);
 }
 void test(Complex c, Complex z, Complex s, Complex j){
     printf("\nAfter multiplication: %Lf+%Lfi", c.x, c.y);
