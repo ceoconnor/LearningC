@@ -1,8 +1,5 @@
-
-
-
-
 #include<stdio.h>
+
 typedef struct COMPLEX{
     long double x;
     long double y;
@@ -11,6 +8,7 @@ Complex mult2(Complex, Complex);
 Complex add2(Complex, Complex);
 Complex square(Complex);
 Complex juliamap(Complex, Complex);
+void complex_print(Complex);
 void test(Complex, Complex, Complex, Complex);
 int main(){
     long double x1, y1, x2, y2;
@@ -28,6 +26,7 @@ int main(){
     s = square(z);
     j = juliamap(c, z);
     test(c, z, s, j);
+    complex_print(z);
     return 0;
 }
 Complex mult2(Complex a, Complex b){
@@ -54,6 +53,9 @@ Complex juliamap(Complex z, Complex c){
     j.y = (pow(z.y, 2)) + c.y;
     return j;
 }
+void complex_print(Complex z){
+    printf("Z = %Lfx + %Lfyi", z.x, z.y);
+}
 void test(Complex c, Complex z, Complex s, Complex j){
     printf("\nAfter multiplication: %Lf+%Lfi", c.x, c.y);
     printf("\nAfter addition: %Lf+%Lfi", z.x, z.y);
@@ -61,4 +63,3 @@ void test(Complex c, Complex z, Complex s, Complex j){
     printf("\nThe juliamap is: %Lf+%Lfi", j.x, j.y);
     
 }
-
