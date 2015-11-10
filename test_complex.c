@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <complex.c>
+#include <complex.h>
 
 void test(Complex, Complex, Complex, Complex);
 
