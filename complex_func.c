@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<complex.h>
+
 typedef struct COMPLEX{
     long double x;
     long double y;
