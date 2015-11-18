@@ -1,8 +1,0 @@
-all: matrices
-
-run: all
-
-	./test_matrix.c
-
-clean:
-	rm -f matrices
