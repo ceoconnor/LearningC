@@ -1,0 +1,7 @@
+all: streams
+
+run: all
+	./getname
+
+clean:
+	rm -f streams output_file.txt
